@@ -7,10 +7,9 @@ DIS_DIR="$HOME/.vim"
 
 mkdir -p "${DIS_DIR}"
 
-echo "begin to exe cp -rf ${CUR_DIR}/* ${DIS_DIR}"
+echo "begin to exe cp -rf ${CUR_DIR} ${DIS_DIR}"
 
-cp -rf ${CUR_DIR}/* "${DIS_DIR}"
-cp -rf ${CUR_DIR}/.git "${DIS_DIR}"
+cp -rf "${CUR_DIR}" "${DIS_DIR}"
 
 echo "begin to exe ln -f -s ${CUR_DIR}/vimrc ~/.vimrc "
 
