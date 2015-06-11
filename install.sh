@@ -7,7 +7,7 @@ DIS_DIR='~'
 
 echo "begin to exe cp -f ${CUR_DIR} ${DIS_DIR}"
 
-cp -f "${CUR_DIR}" "${DIS_DIR}"
+cp -rf "${CUR_DIR}" "${DIS_DIR}"
 
 echo "begin to exe ln -f -s ${CUR_DIR}/vimrc ${DIS_DIR}/.vimrc "
 
