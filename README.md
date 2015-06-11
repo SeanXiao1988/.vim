@@ -1,8 +1,13 @@
-### **Vim Config**
+### **Description**
+
+* my vim config based on vim-vundle
+
+### **Install**
 
 * git clone
 * sh install.sh
+* vim + :BundleInstall
 
 
 ### **Warning**
-* install.sh rm ~/.vimrc and ~/.vim with -f param.
+* install.sh rapace your ~/.vimrc and ~/.vim with -f param
