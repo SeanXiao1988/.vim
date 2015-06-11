@@ -7,10 +7,9 @@ DIS_DIR="$HOME/.vim"
 
 mkdir -p "${DIS_DIR}"
 
-echo "begin to exe cp -rf ${CUR_DIR}/* ${DIS_DIR}"
+echo "begin to exe cp tar cvf - . | (cd ${DIS_DIR}; tar xvf -)"
 
-cp -a -f ${CUR_DIR}/* ${DIS_DIR}
-#cp -rf ${CUR_DIR}/.git ${DIS_DIR}
+tar cvf - . | (cd ${DIS_DIR}; tar xvf -)
 
 echo "begin to exe ln -f -s ${CUR_DIR}/vimrc ~/.vimrc "
 
@@ -18,9 +17,12 @@ ln -f -s ${DIS_DIR}/vimrc ~/.vimrc
 
 echo "begin to exe rm -rf ${CUR_DIR}"
 
-rm -rf ${CUR_DIR}
+#rm -rf ${CUR_DIR}
+
+echo "begin to clone vundle"
 
 cd ${DIS_DIR}
+rm -rf bundle
 mkdir -p bundle
 git clone git@github.com:gmarik/Vundle.vim.git bundle/vundle
 
