@@ -17,7 +17,7 @@ ln -f -s ${DIS_DIR}/vimrc ~/.vimrc
 
 echo "begin to exe rm -rf ${CUR_DIR}"
 
-#rm -rf ${CUR_DIR}
+rm -rf ${CUR_DIR}
 
 echo "begin to clone vundle"
 
