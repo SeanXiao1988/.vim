@@ -1,4 +1,0 @@
-Vim
-===
-
-My Vim Config
