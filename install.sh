@@ -1,22 +1,22 @@
 #/bin/sh
 
-set -e -v -x
+set -e -x
 
 CUR_DIR=`pwd`
-DIS_DIR="`dirname ~`/.vim"
+DIS_DIR="$HOME/.vim"
 
 mkdir -p "${DIS_DIR}"
 
-echo "begin to exe cp -rf ${CUR_DIR}/* ${DIS_DIR}/*"
+#echo "begin to exe cp -rf ${CUR_DIR}/* ${DIS_DIR}"
 
-cp -rf "${CUR_DIR}/*" "${DIS_DIR}/*"
+cp -rf ${CUR_DIR}/* "${DIS_DIR}"
 
-echo "begin to exe ln -f -s ${CUR_DIR}/vimrc ~/.vimrc "
+#echo "begin to exe ln -f -s ${CUR_DIR}/vimrc ~/.vimrc "
 
-ln -f -s "${CUR_DIR}/vimrc" "~/.vimrc"
+ln -f -s ${DIS_DIR}/vimrc ~/.vimrc
 
-echo "begin to exe rm -rf ${CUR_DIR}"
+#echo "begin to exe rm -rf ${CUR_DIR}"
 
-rm -rf "${CUR_DIR}"
+#rm -rf "${CUR_DIR}"
 
-echo "your job: vim + :BundleInstall"
+#echo "your job: vim + :BundleInstall"
