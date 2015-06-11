@@ -5,7 +5,7 @@ set -e
 CUR_DIR=`pwd`
 DIS_DIR='~/.vim'
 
-mkdir -p "${DIS_DIR}
+mkdir -p "${DIS_DIR}"
 
 echo "begin to exe cp -rf ${CUR_DIR}/* ${DIS_DIR}/*"
 
