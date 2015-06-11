@@ -26,7 +26,7 @@ rm -rf bundle
 mkdir -p bundle
 git clone git@github.com:gmarik/Vundle.vim.git bundle/vundle
 
-echo "********************your job***********************"
+echo "******************* YOUR JOB **********************"
 echo "vim"
 echo ":BundleInstall"
-echo "*********************End***************************"
+echo "********************* End **************************"
