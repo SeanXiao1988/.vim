@@ -2,7 +2,7 @@
 
 * my vim config based on vim-vundle
 
-### **Install**
+### **Usage**
 
 * git clone
 * sh install.sh
