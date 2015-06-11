@@ -1,9 +1,9 @@
 #/bin/sh
 
-set -e
+set -e -v -x
 
 CUR_DIR=`pwd`
-DIS_DIR='~/.vim'
+DIS_DIR="`dirname ~`/.vim"
 
 mkdir -p "${DIS_DIR}"
 
